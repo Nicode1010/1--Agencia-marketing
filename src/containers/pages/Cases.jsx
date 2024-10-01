@@ -1,3 +1,6 @@
+//import CaseCard from "components/cases/CaseCard"
+import CasesList from "components/cases/CasesList"
+import Header from "components/cases/Header"
 import Footer from "components/navigation/Footer"
 import Navbar from "components/navigation/Navbar"
 import Layaout from "hocs/layouts/Layaout"
@@ -8,7 +11,9 @@ function Cases(){
         <Layaout>
             <Navbar/>
             <div className="pt-28">
-            Cases
+                <Header/>
+                <CasesList/>
+                
             <Footer/>
             </div>
         </Layaout>

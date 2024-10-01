@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 
 import Error404 from 'containers/errors/Error404';
 import Home from 'containers/pages/Home';
+import Cases from 'containers/pages/Cases';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
             
             {/*Home Display */}
             <Route path="/" element={<Home />}/>
-            
+            <Route path="/casos" element={<Cases/>}/>
           </Routes>
       </Router>
     </Provider>
