@@ -1,31 +1,27 @@
 import {connect} from 'react-redux'
-import loading_dots from 'assets/img/loading-dots.gif'
 import logo_boomslag from 'assets/img/boomslag-black.png'
-
-
 const navigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
-  ],
-  support: [
-      { name: 'Contacto', href: '/contacto' },
-  ],
-  company: [
-      { name: 'Casos', href: '/casos' },
-      { name: 'Servicios', href: '/servicios' },
-      { name: 'Nosotros', href: '/nosotros' },
-      { name: 'Carreras', href: '/carreras' },
-      { name: 'Blog', href: '/blog' },
-      { name: 'Contacto', href: '/contacto' },
-  ],
-  legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
-  ],
+    solutions: [
+      { name: 'Marketing', href: '#' },
+      { name: 'Analytics', href: '#' },
+      { name: 'Commerce', href: '#' },
+      { name: 'Insights', href: '#' },
+    ],
+    support: [
+        { name: 'Contacto', href: '/contacto' },
+    ],
+    company: [
+        { name: 'Casos', href: '/casos' },
+        { name: 'Servicios', href: '/servicios' },
+        { name: 'Nosotros', href: '/nosotros' },
+        { name: 'Carreras', href: '/carreras' },
+        { name: 'Blog', href: '/blog' },
+    ],
+    legal: [
+      { name: 'Claim', href: '#' },
+      { name: 'Privacy', href: '#' },
+      { name: 'Terms', href: '#' },
+    ],
     social: [
       {
         name: 'Facebook',
@@ -97,15 +93,14 @@ function Footer(){
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
-        <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div className="mx-auto max-w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8 xl:col-span-1">
-            <img 
-              src={logo_boomslag} 
-              width={100}
-              height={90}
-              classname=''/>
-              
+            <img
+                src={'https://bafybeie3dkjdydulam4igwx2hwaepkkyugze2z7bpohekdi2maqrgaaegq.ipfs.w3s.link/idealogo.png'}
+                width={60}
+                height={60}
+                className=""/>
               <div className="flex space-x-6">
                 {navigation.social.map((item) => (
                   <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
@@ -171,12 +166,13 @@ function Footer(){
             </div>
           </div>
           <div className="mt-12 border-t border-gray-200 pt-8">
-            <p className="text-base text-gray-400 xl:text-center">&copy; 2020 LeTrip, Inc. All rights reserved.</p>
+            <p className="text-base text-gray-400 xl:text-center">&copy; 2020 Murkiva by Boomslag, Inc. All rights reserved.</p>
           </div>
         </div>
       </footer>
     )
 }
+
 const mapStateToProps=state=>({
 
 })

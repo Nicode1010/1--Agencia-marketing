@@ -7,14 +7,19 @@ import LogoCloud from "components/home/LogoCloud"
 import UseCases from "components/home/UseCases"
 import Footer from "components/navigation/Footer"
 import Navbar from "components/navigation/Navbar"
-import Layaout from "hocs/layouts/Layout"
+import Scroll from "components/SmoothScrollbar"
+import Layout from "hocs/layouts/Layout"
+import { useEffect } from "react"
 
 
 function Home(){
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
     return(
-        <Layaout>
+        <Layout>
             <Navbar/>
-            <div className="pt-28">
+            <div data-scroll-section className="pt-28">
                 <Header/>
                 <Incentives/>
                 <UseCases/>
@@ -22,11 +27,9 @@ function Home(){
                 <CTA/>
                 <LogoCloud/>
                 <BlogList/>
-                
             </div>
-            <Footer/>
-            
-        </Layaout>
+                <Footer/>
+        </Layout>
     )
 }
 export default Home
