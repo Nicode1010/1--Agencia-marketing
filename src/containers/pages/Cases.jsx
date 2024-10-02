@@ -3,7 +3,7 @@ import CasesList from "components/cases/CasesList"
 import Header from "components/cases/Header"
 import Footer from "components/navigation/Footer"
 import Navbar from "components/navigation/Navbar"
-import Layaout from "hocs/layouts/Layaout"
+import Layaout from "hocs/layouts/Layout"
 
 
 function Cases(){
